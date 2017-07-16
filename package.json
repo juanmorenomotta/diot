@@ -1,7 +1,7 @@
 {
   "name": "diot",
   "version": "0.0.1",
-  "description": "An Ionic project",
+  "description": "Un Proyecto de Ionic para Internet de las cosas",
   "devDependencies": {
     "@ionic/cli-plugin-gulp": "1.0.2",
     "@ionic/cli-plugin-ionic1": "2.0.1",

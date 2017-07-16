@@ -1,6 +1,6 @@
 {
-  "name": "My Ionic App",
-  "short_name": "My Ionic App",
+  "name": "diot Ionic",
+  "short_name": "diot Ionic",
   "start_url": "index.html",
   "display": "standalone",
   "icons": [{
