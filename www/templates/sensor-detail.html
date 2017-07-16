@@ -1,0 +1,37 @@
+<!--
+  This template loads for the 'tab.friend-detail' state (app.js)
+  'friend' is a $scope variable created in the FriendsCtrl controller (controllers.js)
+  The FriendsCtrl pulls data from the Friends service (service.js)
+  The Friends service returns an array of friend data
+-->
+<ion-view view-title="{{sensor.name}}">
+  <ion-content class="padding" class="item-thumbnail-center" type="item-text-wrap">
+    <img ng-src="{{envs.item}}" style="width: 128px; height: 128px">
+    <ion-toggle ng-model="sensores.luz" ng-change="luzChange()">
+        Luz Sala
+    </ion-toggle>
+    <div class="list">
+       <div class="item item-icon-left item-icon-right">
+          <i class="icon ion-person-stalker"></i>
+          Presencia
+          <i class="icon {{presencia}}"></i>
+       </div>
+       <div class="item item-icon-left">
+          <i class="icon ion-thermometer"></i>
+          Temperatura
+          <span class="badge badge-assertive">{{sensores.temp}}</span>
+       </div>
+       <div class = "item item-input item-select">
+         <div class = "input-label">
+            Aire
+         </div>
+         <select ng-model="sensores.air" ng-change="airChange()">
+            <option ng-selected="{{ sensores.air == 0 }}" value="0">Apagado</option>
+            <option ng-selected="{{ sensores.air == 1 }}" value="1">Encendido nivel 1</option>
+            <option ng-selected="{{ sensores.air == 2 }}" value="2">Encendido nivel 2</option>
+            <option ng-selected="{{ sensores.air == 3 }}" value="3">Maximo nivel</option>
+         </select>
+      </div>
+    </div>    
+  </ion-content>
+</ion-view>

@@ -1,0 +1,19 @@
+<ion-view view-title="Ambientes">
+  <ion-content>
+    <ion-list>
+      <ion-item class="item-remove-animate item-thumbnail-left item-icon-right" ng-repeat="env in envs" 
+                type="item-text-wrap" href="#/tab/sensors/{{env.id}}">
+        <img ng-src="{{env.face}}" style="width: 64px; height: 64px">
+        <h2>{{env.name}}</h2>
+        <p>{{env.lastText}}</p>
+        <p><b>{{env.environment}}</b></p>
+
+        <i class="icon ion-chevron-right icon-accessory"></i>
+
+        <ion-option-button class="button-positive" ng-click="remove(env)">
+          Ver
+        </ion-option-button>
+      </ion-item>
+    </ion-list>
+  </ion-content>
+</ion-view>
