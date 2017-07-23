@@ -10,7 +10,7 @@ angular.module('starter.services', [])
     environment: 'Sala',
     face: 'img/sala.png',
     item: 'img/sala2.jpg',
-    topic: "sala"
+    topic: "/sala"
   }, {
     id: 1,
     name: 'Dormitorio',
@@ -18,7 +18,7 @@ angular.module('starter.services', [])
     environment: 'Dormitorio',
     face: 'img/balcon.png',
     item: 'img/balcon2.jpg',
-    topic: "dormi"
+    topic: "/dormi"
   }];
 
   return {
