@@ -41,4 +41,5 @@ $ ionic upload
 $ ionic link
 $ ionic login
 ```
-
+### Ejemplo 05 REST
+http://mysafeinfo.com/api/data?list=englishmonarchs&format=json
