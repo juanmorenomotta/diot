@@ -33,3 +33,12 @@ $ ionic serve --lab
 
 ### Enlaces de codigos de ejemplo paso a paso
 https://drive.google.com/drive/folders/0B1Kofy5X4txweUhTbHZQdFMtd3c
+
+### Anexos para los ejemplos
+```bash
+$ ionic start myTabs tabs --type=ionic1
+$ ionic upload
+$ ionic link
+$ ionic login
+```
+
