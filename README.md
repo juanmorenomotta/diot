@@ -43,3 +43,7 @@ $ ionic login
 ```
 ### Ejemplo 05 REST
 http://mysafeinfo.com/api/data?list=englishmonarchs&format=json
+
+### ID Ionic View
+diot-MQTT
+7992f42e
