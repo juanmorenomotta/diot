@@ -6,19 +6,19 @@ angular.module('starter.services', [])
   var envs = [{
     id: 0,
     name: 'Sala',
-    lastText: 'Sensores de temperatura y humedad',
+    lastText: 'Actuadores y Sensores de la sala',
     environment: 'Sala',
     face: 'img/sala.png',
     item: 'img/sala2.jpg',
-    topic: "/sala"
+    topic: "sala"
   }, {
     id: 1,
     name: 'Dormitorio',
-    lastText: 'Sensores de Temperatura y humedad',
+    lastText: 'Actuadores y Sensores del dormitorio',
     environment: 'Dormitorio',
     face: 'img/balcon.png',
     item: 'img/balcon2.jpg',
-    topic: "/dormi"
+    topic: "dormi"
   }];
 
   return {

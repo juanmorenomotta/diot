@@ -50,22 +50,22 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
     }
   })
 
-  .state('tab.sensors', {
-      url: '/sensors',
+  .state('tab.diots', {
+      url: '/diots',
       views: {
-        'tab-sensors': {
-          templateUrl: 'templates/tab-sensors.html',
-          controller: 'SensorsCtrl'
+        'tab-diots': {
+          templateUrl: 'templates/tab-diots.html',
+          controller: 'DiotsCtrl'
         }
       }
     })
-    .state('tab.sensor-detail', {
-      url: '/sensors/:sensorId',
+    .state('tab.diot-detail', {
+      url: '/diots/:diotId',
       cache: false,
       views: {
-        'tab-sensors': {
-          templateUrl: 'templates/sensor-detail.html',
-          controller: 'SensorDetailCtrl'
+        'tab-diots': {
+          templateUrl: 'templates/diot-detail.html',
+          controller: 'DiotDetailCtrl'
         }
       }
     })

@@ -2,7 +2,7 @@ angular.module('starter.controllers', [])
 
 .controller('DashCtrl', function($scope) {})
 
-.controller('SensorsCtrl', function($scope, diot) {
+.controller('DiotsCtrl', function($scope, diot) {
 
   $scope.envs = diot.all();
   $scope.remove = function(sensor) {
@@ -12,7 +12,7 @@ angular.module('starter.controllers', [])
 
 })
 
-.controller('SensorDetailCtrl', function($scope, $stateParams, diot, $http) {
+.controller('DiotDetailCtrl', function($scope, $stateParams, diot, $http) {
   var url    = "";
   var usr    = "";
   var pss    = "";
@@ -35,11 +35,12 @@ angular.module('starter.controllers', [])
   console.log(usr);
   console.log(pss);
 
-  $scope.envs = diot.get($stateParams.sensorId);
+  $scope.envs = diot.get($stateParams.diotId);
 
   $scope.luzChange = function() {
         var valor = ""
         valor = $scope.sensores.luz ? "on" : "off";
+        console.log("Estoy en el topico: "+$scope.envs.topic + '/luz/set = ' + valor);
         client.publish($scope.envs.topic + '/luz/set', valor);
   };
 
@@ -56,7 +57,8 @@ angular.module('starter.controllers', [])
   };
   // url = 'ws://192.168.0.20:1884'
   // wss://m21.cloudmqtt.com:35995
-  url = 'wss://' + url;
+  // url = 'wss://' + url;
+  console.log("Estoy accediendo a : "+url);
   var client = mqtt.connect(url,options);
 
   client.on('connect', function() {
@@ -110,7 +112,7 @@ angular.module('starter.controllers', [])
        disableBack: true
     });
     
-    $state.go("tab.sensors");
+    $state.go("tab.diots");
   };
 
 });

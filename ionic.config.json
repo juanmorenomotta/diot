@@ -1,6 +1,6 @@
 {
   "name": "diot",
-  "app_id": "",
+  "app_id": "99ea7a68",
   "type": "ionic1",
   "watchPatterns": [
     "scss/**/*"
